@@ -12,6 +12,10 @@
         "mocha",
         "chai"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wxul/vue-karma.git"
+    },
     "scripts": {
         "test": "./node_modules/.bin/karma start"
     },
@@ -19,6 +23,7 @@
     "license": "WTFPL",
     "devDependencies": {
         "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
         "babel-preset-env": "^1.6.1",
         "chai": "^4.1.2",
         "html-webpack-plugin": "^2.30.1",
@@ -36,7 +41,6 @@
         "webpack-dev-server": "^2.9.3"
     },
     "dependencies": {
-        "babel-loader": "^7.1.2",
         "vue": "^2.5.2"
     }
 }
