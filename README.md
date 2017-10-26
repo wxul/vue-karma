@@ -1,4 +1,4 @@
-## Vue+karma+mocha+chai测试demo
+## Vue + karma + mocha + chai 测试demo
 
 运行: `npm run test`
 
