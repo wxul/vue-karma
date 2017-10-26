@@ -28,4 +28,13 @@ describe('app组件', () => {
         const vm = new Ctor().$mount();
         expect(vm.$el.textContent).to.equal('msg:this is message.');
     });
+    it('检查渲染更新', done => {
+        const vm = new Vue(App).$mount();
+        vm.msg = 'message2';
+        // 在状态改变后和断言 DOM 更新前等待一刻
+        Vue.nextTick(() => {
+            expect(vm.$el.textContent).to.equal('msg:message2');
+            done();
+        });
+    });
 });
